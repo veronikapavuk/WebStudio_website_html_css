@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title lang="en">WebStudio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+    rel="stylesheet">
+<link rel="stylesheet" href="./style.css"/>
+<!-- Прелоудер -->
+<script>
+    window.addEventListener('load', function() {
+        document.querySelector('.preloader').style.display = 'none';
+    });
+</script>
+
+</head>
+<body> 
+    <!-- Прелоудер -->
+    <div class="preloader">
+        <div class="loader"></div>
+    </div>
+    
+    <!--Хедер-->
+       <header>
+            <div class="list">
+                <a class="menu-item link" href="./page1.html" lang="en"><span class="logo menu-item"><span class="logo-wrap">Web</span>Studio</span></a>
+                <div><a class="menu-item link" href="./page1.html">Студія</a></div>
+                <div><a class="menu-item link" href="./portfolio.html">Портфоліо</a></div>
+                <div><a class="menu-item link" href="">Контакти</a></div>
+            </div>
+
+            <div class="list link">
+                <div><a class="menu-item link-address" href="mail:info@devstudio.com">info@devstudio.com</a></div>
+                <div><a class="menu-item link-address" href="tel:+380961111111">+38 096 111 11 11</a></div>
+            </div>     
+        </header>
+
+<!--Main part of page-->
+    <main>
+        <!--Section 1 -->
+        <div class ="backstage">
+            <div class="div-h1">
+                <h1>ЕФЕКТИВНІ РІШЕННЯ ДЛЯ ВАШОГО БІЗНЕСУ</h1>
+            </div>
+                <button class="main-btn" type="button" onclick="window.location.href='page1.html'">Замовити послугу</button>
+        </div>
+
+    <!--Section 2-->
+        <h2 class="visually-hidden">Переваги нашої вебстудії</h2>
+        <div class="list-of-skils">
+            <div>
+                <h3 class="title-webstudio">увага до деталей</h3>
+                <p class="item-webstudio">Ідейні міркування, і навіть початок повсякденної роботи з формування позиції.</p>
+            </div>
+            <div>
+                <h3 class="title-webstudio">пунктуальність</h3>
+                <p class="item-webstudio">Завдання організації, особливо рамки і місце навчання кадрів тягне у себе.</p>
+            </div>
+            <div>
+                <h3 class="title-webstudio">планування</h3>
+                <p class="item-webstudio">Так само консультація з широким активом значною мірою зумовлює.</p>
+            </div>
+            <div>
+                <h3 class="title-webstudio">сучасні технології</h3>
+                <p class="item-webstudio">Значимість цих проблем настільки очевидна, що реалізація планових завдань.</p>
+            </div>
+        </div>
+
+    <!--Section 3-->
+        <section class="container-3">
+            <h2>Чим ми займаємося</h2>
+            <img src="./images/img1.jpg" alt="планшет,клавіатура, руки" width="360"></div>
+            <img src="./images/img2.jpg" alt="ноутбук,телефон, руки" width="360"></div>
+            <img src="./images/img3.jpg" alt="планшет, спектр кольорів" width="360"></div>
+        </section>
+
+    <!--Section 4-->
+        <section class="conteiner-4">
+            <h2 class="title-4-section">Наша команда</h2>
+            <div class="list-4">
+                <div class="div-team">
+                    <img src="./images/img4.jpg" alt="фото1" width="270">
+                    <h3 class="title-name">Ігор Дем'яненко</h3>
+                    <p class="item-position">Product Designer</p>
+                </div>
+                <div class="div-team">
+                    <img src="./images/img5.jpg" alt="фото2" width="270">
+                    <h3 class="title-name">Ольга Рєпіна</h3>
+                    <p class="item-position">Frontend Developer</p>
+                </div>
+                <div class="div-team">
+                    <img src="./images/img6.jpg" alt="фото3" width="270">
+                    <h3 class="title-name">Микола Тарасов</h3>
+                    <p class="item-position">Marketing</p>
+                </div>
+                <div class="div-team">
+                    <img src="./images/img7.jpg" alt="фото4" width="270">
+                    <h3 class="title-name">Михайло Єрмаков</h3>
+                    <p class="item-position">UI Designer</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!--Footer-->
+        <footer>
+                <a class="menu-item link" href="./index.html" lang="en"><span class="logo-cover menu-item"><span class="logo-wrap">Web</span>Studio</span></a>
+            <div class="adress">    
+                <a class="menu-item link-maps" href="https://goo.gl/maps/cXm6JSxJNEi6QH9i9" target="_blank" rel=" noopener noreferrer">м. Київ, пр-т Лесі Українки, 26</a>
+                <a class="menu-item link-contact" href="mailto:info@example.com">info@example.com</a>
+                <a class="menu-item link-contact" href="tel:+380991111111">+38 099 111 11 11</a>
+            </div>
+        </footer>
+</body>
+</html>

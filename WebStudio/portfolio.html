@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title lang="en">Document</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    
+    <!--Шапка-->
+    <header>
+        <div class="list">
+            <a class="menu-item link" href="./page1.html" lang="en"><span class="logo menu-item"><span class="logo-wrap">Web</span>Studio</span></a>
+            <div><a class="menu-item link" href="./page1.html">Студія</a></div>
+            <div><a class="menu-item link" href="./portfolio.html">Портфоліо</a></div>
+            <div><a class="menu-item link" href="">Контакти</a></div>
+        </div>
+
+        <div class="list link">
+            <div><a class="menu-item link-address" href="mail:info@devstudio.com">info@devstudio.com</a></div>
+            <div><a class="menu-item link-address" href="tel:+380961111111">+38 096 111 11 11</a></div>
+        </div>     
+    </header>
+
+    <!--Main part of page-->
+    <main class="portfolio-body">
+
+        <!--Section-->
+        <section>
+            <h1 hidden>Фільтр Портфоліо</h1>
+
+            <!--first list-->
+            <div class="menu-list">
+                <button class="btn" data-filter="all">Усі</button>
+                <button class="btn" data-filter="web">Веб-сайти</button>
+                <button class="btn" data-filter="app">Додатки</button>
+                <button class="btn" data-filter="design">Дизайн</button>
+                <button class="btn" data-filter="marketing">Маркетинг</button>
+            </div>
+              
+            <!--Second list-->
+                <div class="project-list">
+                        <div class="project-item" data-category="web">
+                            <a href="./page1.html"><img src="./images/img-1.jpg" alt="зразок вебсайту1" width="370"></a> 
+                            <h2 class="title">Технокряк</h2>
+                            <p class="item">Веб-сайт</p>
+                        </div>
+                        <div class="project-item" data-category="design">
+                            <a href="./page1.html"><img src="./images/img-2.jpg" alt="баскетболісти" width="370"></a>
+                            <h2 class="title">Постер New Orlean vs Golden Star</h2>
+                            <p class="item">Дизайн</p>
+                        </div>
+                        <div class="project-item" data-category="app">
+                            <a href="./page1.html"><img src="./images/img-3.jpg" alt="зразок лого ресторану" width="370"></a>
+                            <h2 class="title">Ресторан Seafood</h2>
+                            <p class="item">Додаток</p>
+                        </div>
+                   
+                        <div class="project-item" data-category="marketing">
+                            <a href="./page1.html"><img src="./images/img-4.jpg" alt="навушники" width="370"></a>
+                            <h2 class="title">Проєкт Prime</h2>
+                            <p class="item">Маркетинг</p>
+                        </div>
+                        <div class="project-item" data-category="app">
+                            <a href="./page1.html"><img src="./images/img-5.jpg" alt="коробки" width="370"></a>
+                            <h2 class="title">Проєкт Boxes</h2>
+                            <p class="item">Додаток</p>
+                        </div>
+                        <div class="project-item" data-category="web">
+                            <a href="./page1.html"><img src="./images/img-6.jpg" alt="монітор" width="370"></a>
+                            <h2 class="title">Inspiration has no Borders</h2>
+                            <p class="item">Веб-сайт</p>
+                        </div>
+                    
+                        <div class="project-item" data-category="design">
+                            <a href="./page1.html"><img src="./images/img-7.jpg" alt="книга" width="370"></a>
+                            <h2 class="title">Видання Limited Edition</h2>
+                            <p class="item">Дизайн</p>
+                        </div>
+                        <div class="project-item" data-category="marketing">
+                            <a href="./page1.html"><img src="./images/img-8.jpg" alt="бірка" width="370"></a>
+                            <h2 class="title">Проєкт LAB</h2>
+                            <p class="item">Маркетинг</p>
+                        </div>
+                        <div class="project-item" data-category="app">
+                            <a href="./page1.html"><img src="./images/img-9.jpg" alt="ноутбук" width="370"></a>
+                            <h2 class="title">Growing Business</h2>
+                            <p class="item">Додаток</p>
+                        </div>
+                       
+                </div>
+        </section>
+    </main>
+
+    <!--Footer-->
+    <footer>
+        <a class="menu-item link" href="./index.html" lang="en"><span class="logo-cover menu-item"><span class="logo-wrap">Web</span>Studio</span></a>
+    <div class="adress">    
+        <a class="menu-item link-maps" href="https://goo.gl/maps/cXm6JSxJNEi6QH9i9" target="_blank" rel=" noopener noreferrer">м. Київ, пр-т Лесі Українки, 26</a>
+        <a class="menu-item link-contact" href="mailto:info@example.com">info@example.com</a>
+        <a class="menu-item link-contact" href="tel:+380991111111">+38 099 111 11 11</a>
+    </div>
+    </footer>  
+
+    <script>
+        const buttons = document.querySelectorAll('.menu-list .btn');
+        const items = document.querySelectorAll('.project-item');
+      
+        buttons.forEach(button => {
+          button.addEventListener('click', () => {
+            const filter = button.getAttribute('data-filter');
+      
+            items.forEach(item => {
+              const category = item.getAttribute('data-category');
+              item.style.display = (filter === 'all' || category === filter) ? 'block' : 'none';
+            });
+          });
+        });
+    </script>
+
+</body>
+</html>

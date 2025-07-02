@@ -1,0 +1,333 @@
+:root {
+   --font-family: 'Raleway', sans-serif;
+   --font-family: 'Roboto', sans-serif;
+    /* colour */
+    --main-light: #fff;
+    --main-dark: #000000;
+    --maim-color-font: #757575;
+    --secondary-color: #2196F3;
+    --backstage-color: #2F303A;
+    --background: #FFFFFF;
+    /* width: 1600px; */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Прелоудер */
+.preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+.loader {
+    width: 50px;
+    height: 50px;
+    border: 5px solid #ccc;
+    border-top: 5px solid #2196F3;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+body {
+    width: 1600px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+}
+
+/* Хедер */
+header {
+    display: flex;
+    justify-content: space-around;
+    height: 80px;
+    /* border: 1px solid red; Допоможе знайти зайві відступи
+    margin-bottom: 0px; */
+}
+.logo {
+    font-family: 'Raleway';
+    font-weight: 700;
+    font-size: 26px;
+    letter-spacing: 3%;
+    color: #000000;
+}
+.logo-wrap {
+    color: var(--secondary-color);
+}
+.list {
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+.link {
+    text-decoration: none;
+    font-weight: 500;
+    color: #212121;
+    margin-left: 25px;
+    margin-right: 25px;
+}
+.link-address{
+    font-weight: 500;
+    color: #757575;
+    text-decoration: none;
+    margin-left: 25px;
+    margin-right: 25px;
+}
+.menu-item:hover,
+.menu-item:focus {
+    color: #2196F3;
+    text-decoration: none;
+}
+
+/* Section 1 */
+/* main {
+    border: 1px solid rgb(0, 255, 34); Допоможе знайти зайві відступи
+    margin-top: 0px;
+    padding-top:0 ;
+} */
+.backstage {
+    height: 600px;
+    background:#2F303A;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.div-h1{
+    width: 696px;
+    text-align: center;
+}
+h1{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+    font-size: 44px;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    margin: 0px;
+}
+
+.main-btn {
+    width: 216px;
+    height: 50px;
+    margin: 30px;
+    border-radius: 4px;
+    font-weight: bold;
+}
+.main-btn:hover,
+.main-btn:focus { 
+    transform: scale(1.2);
+    background: #188CE8;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    font-weight: 700;
+    font-size: 16px;
+    letter-spacing: 0.06em;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+/* Section 2 */
+.visually-hidden {
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
+}
+.list-of-skils {
+    display: flex;
+    justify-content: space-between;
+    height: 98px;
+    margin: 94px 115px;
+}
+.title-webstudio {
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #212121;
+}
+.item-webstudio {
+    font-size: 14px;
+    color: #757575;
+    line-height:24px;
+    letter-spacing: 3%;
+}
+
+/* Section 3 */
+.container-3 {
+    text-align: center;
+    padding: 94px 0px;
+}
+.container-3 h2 {
+    font-weight: 700;
+    font-size: 36px;
+    color: #212121;
+}
+
+/* Section 4 */
+.conteiner-4 {
+    height: 648px;
+    background-color: #F5F4FA;
+    text-align: center;
+    padding-top: 94px;
+}
+.div-team {
+    background-color: #FFFFFF;
+    box-shadow: 
+        1px 1px 1px rgba(0, 0, 0, 0.3),  /* Тінь праворуч */
+       -1px 1px 1px rgba(0, 0, 0, 0.3),  /* Тінь ліворуч */
+        0px 5px 5px rgba(0, 0, 0, 0.3);  /* Тінь знизу */
+}        
+.list-4 {
+    display: flex;
+    justify-content: space-between;
+    margin: 0px 50px;
+}
+.title-4-section {
+    font-weight: 700;
+    font-size: 36px;
+    color: #212121;
+}
+.title-name{
+    font-weight: 500;
+    font-size: 16px;
+    color: #212121;
+}
+.item-position{
+    font-size: 16px;
+}
+
+/* Footer */
+footer {
+    height: 252px;
+    background:#2F303A;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.logo-cover{
+    color: #FFFFFF;
+    font-family: 'Raleway';
+    font-weight: 700;
+    font-size: 26px;
+    letter-spacing: 3%;
+    padding-left: 190px;
+}
+.adress {
+    display: flex;
+    flex-direction: column;
+    line-height: 24px;
+    letter-spacing: 3%;
+    padding-left: 215px;
+    margin-top: 20px;
+}
+.link-maps{
+    color:#FFFFFF;
+    text-decoration: none;
+}
+.link-contact{
+    color:rgba(255, 255, 255, 0.6);;
+    text-decoration: none;
+}
+
+/* Portfolio */
+.portfolio-body {
+    width: 1500px;
+}
+
+.menu-list {
+    display: flex;
+    justify-content: space-between; /* або space-evenly */
+    gap: 12px; /* додає відступ між кнопками, можна змінити */
+    padding: 0;
+    margin: 0 auto;
+    max-width: 1080px; /* або 100%, або будь-яке інше обмеження */
+}
+
+.btn {
+    width: 125px;
+    height: 38px;
+    left: 593px;
+    top: 174px;
+    background: #F5F4FA;
+    color: #212121;
+    text-align: center;
+    line-height: 26px;
+    letter-spacing: 0.03em;
+    border-radius: 4px;
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+    border-radius: 4px;
+}
+
+.btn:hover,
+.btn:focus {
+    background-color: #2196F3;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+.project-list{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 94px auto;
+    gap: 40px 20px;
+}
+
+.project-item {
+    border-radius: 8px;
+    width: 370px;
+}
+
+.project-item img{
+    border: 1px solid #ddd;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.title{
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+    color: #212121;
+}
+
+.item {
+    font-size: 16px;
+    line-height: 1.8;
+    letter-spacing: 0.03em;
+    color: #757575;
+}
+
+@media (max-width: 768px) {
+    .project-item {
+      width: calc(50% - 20px);
+    }
+  }
+
+@media (max-width: 480px) {
+    .project-item {
+      width: 100%;
+    }
+  }
+
+  /* flex-wrap: wrap; */ 
+  /* перенос елементів на новий рядок, якщо елем. непоміщаються в один ряд батьківського контейнера */
+  /* transition: background-color 0.3s ease; */
+    /* transition	Задає анімацію при зміні стилю
+    background-color	Властивість, яку анімуємо (тут — колір фону)
+    0.3s	Тривалість переходу (0.3 секунди)
+    ease	Тип кривої анімації: спочатку повільніше, потім швидше, потім знову повільніше */
