@@ -25,8 +25,8 @@ To practice building a professional static website with multiple pages, responsi
 
 📷 **Page Previews:**
 
-![Homepage Preview](preview1.png)
-![Portfolio Preview](preview2.png)
+![Homepage Preview](preview1.PNG)
+![Portfolio Preview](preview2.PNG)
 
 ⚠️ **Note:**
 This is a fully static educational project. It includes a header, sections for services, team, footer, and a separate portfolio page with an interactive category filter.
