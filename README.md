@@ -21,7 +21,7 @@ To practice building a professional static website with multiple pages, responsi
 * `style.css` — main stylesheet
 * `img/` — images, team photos, project examples
 * `README.md` — project description
-* `preview1.png`, `preview2.png` — page screenshots
+* `preview1.png`, `preview2.png` — project preview / screenshots
 
 📷 **Page Previews:**
 
